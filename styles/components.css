@@ -40,3 +40,15 @@
 .additional-infos{
   display: none;
 }
+
+
+/* Overview
+###########################################################################  */
+.overview{
+  display: grid;
+  padding: var(--xs);
+  margin: 0;
+
+  gap: var(--xs);
+  grid-template-columns: repeat(auto-fit, minmax(calc(var(--m)*20), 1fr));
+}
