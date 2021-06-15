@@ -46,9 +46,10 @@
 ###########################################################################  */
 .overview{
   display: grid;
-  padding: var(--xs);
+  padding: var(--m);
   margin: 0;
 
-  gap: var(--xs);
-  grid-template-columns: repeat(auto-fit, minmax(calc(var(--m)*20), 1fr));
+  gap: var(--m);
+  grid-template-columns: repeat(auto-fit, minmax(calc(var(--m)), 1fr));
+
 }
