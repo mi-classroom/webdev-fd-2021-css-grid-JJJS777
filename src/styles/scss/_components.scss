@@ -12,19 +12,19 @@
     content: '.';
 }
 
-.info-list dt {
+.info-list dt {  
     margin-right: var(--xxs);
     float: left;
     font-weight: var(--fw-bold);
 }
 
-.info-list dt::after {
+.info-list dt::after { 
     content: ':';
 }
 
 /* Intro Text
 ###########################################################################  */
-
+  
 .intro-text {
     width: 100%;
     max-width: calc(var(--l) * 40);
@@ -33,7 +33,6 @@
     line-height: var(--lh-normal);
 }
 
-
 /* Additional Infos
 ###########################################################################  */
 
@@ -41,13 +40,37 @@
     display: none;
 }
 
-
 /* Overview
 ###########################################################################  */
 .overview {
-    display: grid;
-    padding: var(--m);
+    display: flex;
+    padding: 0;
     margin: 0;
-    gap: var(--m);
-    grid-template-columns: repeat(auto-fit, minmax(calc(var(--m)), 1fr));
 }
+
+/* Card
+###########################################################################  */
+.card {
+    position: relative;
+    overflow: hidden;
+    flex-basis: 15rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: var(--lightest);
+    box-shadow: var(--shadow-l);
+    transition: flex var(--tr-fast);
+
+    &:hover {
+        flex-basis: 30rem;
+    }
+
+    &__header {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: var(--m);
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    }
+}
+  
