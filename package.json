@@ -26,10 +26,13 @@
     "live": "npm run build && npm run serve:live"
   },
   "devDependencies": {
+    "node-sass": "^6.0.1",
     "npm-run-all": "^4.1.5",
     "sass": "^1.35.1",
+    "stylelint": "^13.13.1",
     "stylelint-config-idiomatic-order": "^8.1.0",
     "stylelint-config-standard": "^22.0.0",
-    "stylelint-order": "^4.1.0"
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0"
   }
 }
